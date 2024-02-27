@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+<body>
+    <h1 class="titles">Registro de Usuario</h1>
+    <form class="create-form" action="" method="POST">
+        
+        <div class="form-controller">
+            <label class="titles" for="nombre">Nombre y Apellido:</label>
+            <input class="control" type="text" id="nombre" name="nombre" placeholder="Ingrese Nombre"><br>
+        </div>
+        
+        <div class="form-controller">
+            <label class="titles" for="usuario">Nombre de Usuario:</label>
+            <input class="control" type="text" id="usuario" name="usuario" placeholder="Ingrese Apellido" required><br>
+        </div>
+
+        <div class="form-controller">
+            <label class="titles" for="email">Email:</label>
+            <input class="control" type="email" id="email" name="email" placeholder="Ingrese EMail" required><br>
+        </div>
+        
+        <div class="form-controller">
+            <label class="titles" for="fecha_nacimiento">Fecha de Nacimiento:</label>
+            <input class="control" type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br>
+        </div>
+        
+        <div class="form-controller"> 
+            <label class="titles" for="domicilio">Domicilio:</label>
+            <input class="control" type="text" id="domicilio" name="domicilio" placeholder="Ingrese Domicilio" required><br>
+        </div>
+        
+        <div class="form-controller">
+            <label class="titles" for="perfil_usuario">Perfil del Usuario:</label>
+            <select class="control" id="perfil_usuario" name="perfil_usuario">
+                <option value="comprar">Comprar</option>
+                <option value="vender">Vender</option>
+            </select><br>
+        </div>
+        
+        <div class="form-controller">
+            <label class="titles" for="categorias_interes">Categorías de Interés:</label>
+            <label for="electro">
+                <input type="checkbox" id="electro" name="categorias_interes" value="electro">
+                Electro
+            </label>
+            <label for="moda">
+                <input type="checkbox" id="moda" name="categorias_interes" value="moda">
+                Moda
+            </label>
+            <label for="hogar">
+                <input type="checkbox" id="hogar" name="categorias_interes" value="hogar">
+                Hogar
+            </label>
+            <label for="jugueteria">
+                <input type="checkbox" id="jugueteria" name="categorias_interes" value="jugueteria">
+                Juguetería
+            </label>
+            <label for="vida_sana">
+                <input type="checkbox" id="vida_sana" name="categorias_interes" value="vida_sana">
+                Vida Sana
+            </label>
+
+        </div>
+        
+        <div class="form-controller">
+            <label class="titles" for="foto_usuario">Foto de Usuario:</label>
+            <input class="control" type="file" id="foto_usuario" name="foto_usuario"><br>
+        </div>
+        
+        <div class="form-controller">
+            <label class="titles" for="password">Contraseña:</label>
+            <input class="control" type="password" id="password" name="password" placeholder="Ingrese Contraseña" required><br>
+        </div>
+        
+        <div class="form-controller">
+            <label class="titles" for="confirm_password">Confirmar Contraseña:</label>
+            <input class="control" type="password" id="confirm_password" name="confirm_password" placeholder="Confirme Contraseña" required><br>
+        </div>
+        
+        <div class="button-form-controller">
+            <a href="/" class="form-button">Enviar</a>
+            <input class="reset-form-button" type="reset" value="Borrar">
+        </div>
+        
+    </form>
+</body>
+</html>
