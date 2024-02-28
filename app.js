@@ -4,7 +4,8 @@ const path = require('path');
 
 app.use(express.static('public'));
 
-app.listen(3030, () => console.log("Levantando un servidor con Express en el puerto 3030"));
+const port = process.env.PORT || 3030;
+app.listen(port, () => console.log(`Levantando un servidor con Express en el puerto ${port}`));
 
 app.get('/', function(req, res){
     res.sendFile(path.resolve(__dirname, './views/home.html'));
